@@ -115,7 +115,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
     <script src="../js/products.js"></script>
 
-
+    <!--Grid view template-->
     <div id="product-list-template" class="d-none">
         <div class="d-flex py-1">
             <picture>
@@ -125,10 +125,9 @@
                 <div class="d-flex align-items-start justify-content-between">
                     <div>
                         <div class="fw-bold product-title"></div>
-                        <label>Цена</label>
                         <div class="product-price"></div>
                     </div>
-                    <span class="product-rating badge rounded-pill bg-primary ms-auto"></span>
+                    <span class="product-rating badge rounded-pill bg-secondary ms-auto"></span>
                 </div>
                 <div class="product-description pt-3"></div>
             </div>
@@ -136,6 +135,7 @@
         <hr class="my-1">
     </div>
 
+    <!--Grid view template-->
     <div id="product-grid-template" class="d-none">
         <div class="col-md-4">
             <div class="img-thumbnail mb-3">
@@ -144,17 +144,15 @@
                         <img class="product-image img-fluid img-thumbnail" src="">
                     </picture>
                     <div class="px-2 w">
-                        <div class="product-rating badge rounded-pill bg-primary"></div>
+                        <div class="product-rating badge rounded-pill bg-secondary"></div>
                         <div class="fw-bold product-title py-1"></div>
-                        <label>Цена</label>
-                        <div class="product-price"></div>
+                        <div class="product-price d-flex"></div>
                     </div>
                 </div>
                 <div class="product-description pt-3"></div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

@@ -40,7 +40,7 @@ function getProductTemplate(product){
     $template.find('.product-title').text(product.title);
     const image = product.image ? product.image : defaultPoster;
     $template.find('.product-image').attr('src', image);
-    $template.find('.product-price').text(product.price);
+    $template.find('.product-price').text(`Цена: ${product.price} лв.`).addClass('badge bg-success');
     $template.find('.product-description').text(product.description);
     $template.find('.product-rating').text(product.rating.rate);
 
@@ -50,7 +50,7 @@ function getProductTemplate(product){
 function getProductParams(){
     const sortBy = $('#filter-sort').val();
     const limit = $('#limitResults').val();
-    const params = { limit: limit, sort_by: sortBy}
+    const params = { limit: limit, sort: sortBy}
     
     return params;
 }
